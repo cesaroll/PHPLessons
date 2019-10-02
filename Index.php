@@ -14,8 +14,16 @@
     </form>
 
     <?php
+        // Get Variable from Form using GET
         $name = $_GET['person']; // string variable
         echo "Hi ".$name; // concatenate strings
+
+        $phrase = "Hello World!!";
+        echo "<br/>".$phrase;
+        echo "<br/>Length: ". strlen($phrase);
+        echo "<br/>Word Count: ". str_word_count($phrase);
+
+        echo "<br/>".str_replace("Hello", "Hi", $phrase);
     ?>
 </body>
 </html>
