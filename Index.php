@@ -7,9 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+
+    <form method="GET">
+        <input type="text" name="person" id="person">
+        <button type="submit">Submit</button>
+    </form>
+
     <?php
-        echo "Hi there!";
-        echo 10+5; 
+        $name = $_GET['person']; // string variable
+        echo "Hi ".$name; // concatenate strings
     ?>
 </body>
 </html>
