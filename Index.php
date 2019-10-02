@@ -9,16 +9,20 @@
 <body>
 
     <?php
-        // Switch
+        $msgs = array("Hola", "Cesar", "como", "estas?");
 
-        $x = 1;
+        $len = count($msgs);
 
-        switch($x){
-            case 1:
-                echo "The answer is 1";
-                break;
-            default:
-                echo "The answer is not 1";
+        echo "<br/>";
+        
+        for($i = 0; $i < $len; $i++){
+            echo $msgs[$i]." ";
+        }
+        
+        echo "<br/>";
+
+        foreach($msgs as $msg){
+            echo $msg." ";
         }
     ?>
 
