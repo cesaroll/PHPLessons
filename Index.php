@@ -9,11 +9,18 @@
 <body>
 
     <?php
-        // Arrays
+        // Switch
 
-        $names = array("Cesar", "Omar", "Jocelyn", "Denise");
+        $x = 1;
 
-        echo $names['0']." ".$names['1'];
+        switch($x){
+            case 1:
+                echo "The answer is 1";
+                break;
+            default:
+                echo "The answer is not 1";
+        }
     ?>
+
 </body>
 </html>
