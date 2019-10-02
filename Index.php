@@ -8,22 +8,12 @@
 </head>
 <body>
 
-    <form method="GET">
-        <input type="text" name="person" id="person">
-        <button type="submit">Submit</button>
-    </form>
-
     <?php
-        // Get Variable from Form using GET
-        $name = $_GET['person']; // string variable
-        echo "Hi ".$name; // concatenate strings
+        // Arrays
 
-        $phrase = "Hello World!!";
-        echo "<br/>".$phrase;
-        echo "<br/>Length: ". strlen($phrase);
-        echo "<br/>Word Count: ". str_word_count($phrase);
+        $names = array("Cesar", "Omar", "Jocelyn", "Denise");
 
-        echo "<br/>".str_replace("Hello", "Hi", $phrase);
+        echo $names['0']." ".$names['1'];
     ?>
 </body>
 </html>
