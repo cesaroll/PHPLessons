@@ -9,21 +9,17 @@
 <body>
 
     <?php
-        $msgs = array("Hola", "Cesar", "como", "estas?");
-
-        $len = count($msgs);
-
-        echo "<br/>";
         
-        for($i = 0; $i < $len; $i++){
-            echo $msgs[$i]." ";
-        }
-        
-        echo "<br/>";
+        newCalc(100);
+        newCalc(200);
 
-        foreach($msgs as $msg){
-            echo $msg." ";
+        function newCalc($x){
+            $newnr = $x * 0.75;
+            echo "<br/>Here is 75% of ".$x." : ".$newnr;
         }
+
+        
+
     ?>
 
 </body>
