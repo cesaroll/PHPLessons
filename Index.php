@@ -1,3 +1,9 @@
+<?php
+
+    include 'functions/user-functions.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,18 +14,19 @@
 </head>
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">nav1</a></li>
+                <li><a href="">nav2</a></li>
+                <li><a href="">nav3</a></li>
+                <li><a href="">nav4</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <?php
-        
-        newCalc(100);
-        newCalc(200);
-
-        function newCalc($x){
-            $newnr = $x * 0.75;
-            echo "<br/>Here is 75% of ".$x." : ".$newnr;
-        }
-
-        
-
+        include 'MainContent.php';
     ?>
 
 </body>
