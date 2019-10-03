@@ -16,8 +16,12 @@
     
     include 'Menu.php';
 
-    //$_SESSION['username'] = "cesarl";
-    
+    if(isset($_SESSION['username'])){
+        echo $_SESSION['username']." logged in.";
+    }
+    else{
+        echo "Not logged in";
+    }
     
     ?>
     
