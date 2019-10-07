@@ -1,7 +1,6 @@
 <?php
-    session_start();
+    include_once 'includes/dbh.inc.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +10,21 @@
     <title>Document</title>
 </head>
 <body>
-
+    
     <?php
     
-    include 'Menu.php';
+    $sql = "SELECT * FROM User;";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
 
-    //$_SESSION['username'] = "cesarl";
-    
+    if($resultCheck > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<br/>" . $row['UserName'];
+        }
+    }
+
     
     ?>
-    
+
 </body>
 </html>
