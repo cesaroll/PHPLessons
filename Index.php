@@ -1,6 +1,7 @@
 <?php
     include_once 'includes/dbh.inc.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,16 @@
 </head>
 <body>
     
+    <form action="includes/signup.inc.php" method="POST">
+        <input type="text" name="userName" placeholder="User Name" >
+        <br/>
+        <input type="password" name="password" placeholder="Password">
+        <br/>
+        <!--<input type="submit" value="submit">-->
+        <button type="submit" name="submit">Sign up</button>
+    </form>
+
+
     <?php
     
     $sql = "SELECT * FROM User;";
